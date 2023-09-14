@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    background-color: red;
+}
+
+.ct--container {
+    width: 1120px;
+    margin: 0 auto;    
+}
+
+.header {
+    width: 100%;
+    height: 120px;
+}
+
+.content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+
+    height: 100%;
+}
+
+.logo-container {
+    width: 120px;
+    height: 100%;
+    background-image: url('https://shop.az/assets/images/logos/logo.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    flex: 2;
+}
+
+.search-container {
+    flex: 8;
+    width: 100%;
+    height: 45px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0;
+}
+
+input {
+    height: 100%;
+    box-shadow: 0 0 0 1px #e3e3e3;
+    outline: none;
+    flex: 10;
+    background-color: white;
+    border: none;
+}
+
+.search-button {
+    height: 100%;
+    box-shadow: 0 0 0 1px #e3e3e3;
+    outline: none;
+    flex: 1;
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+.profile-container {
+    flex: 4;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.profile-button {
+    height: 100%;
+    width: 100%;
+
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+
+    text-transform: uppercase;
+
+    border-radius: 6px;
+}
+
+.profile {
+    position: relative;
+}
+
+.bg-white {
+    background-color: white;
+    color: black;
+}
+
+.bg-transparent {
+    background-color: transparent;
+    color: white;
+}
+
+.carousel {
+    height: fit-content;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.cart {
+    width: 195px;
+    height: 211px;
+    flex-shrink: 0;
+    padding: 65px 15px 15px;
+
+    display: flex;
+    /* flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px; */
+}
+
+.picture {
+    flex: 2;
+    width: 90px;
+    height: 90px;
+    margin: 0 auto;
+    margin-bottom: 6px;
+
+    /* background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain; */
+    border-radius: 50%;
+}
+
+.desc {
+    flex: 3;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+
+    font-size: 12px;
+}
+
+.slick-prev {
+    position: absolute;
+    left: 6px;
+    z-index: 10;
+    transform: translate(-50%, -50%) !important;
+}
+
+.slick-next {
+    position: absolute;
+    right: 6px;
+    z-index: 10;
+    transform: translate(-50%, -50%) !important;
+}
+
+.slick-prev::before, .slick-next::before {
+    color: gray;
+    font-size: 36px;
+}
+
+.slick-dots {
+    display: none !important;
+}
+
+.picture-1 {
+    background-image: url('https://static.shop.az/images/categorylogo/original/ebbf344d-4395-439d-bcf1-20a2dcd9e413.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.picture-2 {
+    background-image: url('https://static.shop.az/images/categorylogo/original/1fced528-e64b-4e65-b6ee-a6df9e1fa291.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.picture-3 {
+    background-image: url('https://static.shop.az/images/categorylogo/original/c742d0c4-81d4-48e6-b226-65727d92de0e.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.picture-4 {
+    background-image: url('https://static.shop.az/images/categorylogo/original/fb1b56c4-fe0d-42d8-8d71-7b6108b8058b.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.picture-5 {
+    background-image: url('https://static.shop.az/images/categorylogo/original/4bcde238-9b0c-44a1-9f9f-97e8f63702bc.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.picture-6 {
+    background-image: url('https://static.shop.az/images/categorylogo/original/082957be-3072-4106-a4ba-8729d43dbf79.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.picture-7 {
+    background-image: url('https://static.shop.az/images/categorylogo/original/2cd07be2-7fe0-4243-b8a6-9cf7366c5710.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.picture-8 {
+    background-image: url('https://static.shop.az/images/categorylogo/original/bbc36779-eb7a-4623-8908-d28c191a3636.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.picture-9 {
+    background-image: url('https://static.shop.az/images/categorylogo/original/bc5eded4-99a0-42dc-bf06-ca169de8d97e.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.picture-10 {
+    background-image: url('https://static.shop.az/images/categorylogo/original/684ad5eb-3933-46ba-8944-577188a35e86.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.drop-section {
+    height: 36px;
+    padding: 3px;
+    width: 200px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    font-size: 12px;
+    text-transform: capitalize;
+
+    color: black;
+    border-bottom: 1px solid black;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 45px;
+    left: 0;
+    z-index: 11;
+
+    width: fit-content;
+}
